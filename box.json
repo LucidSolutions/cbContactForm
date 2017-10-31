@@ -1,0 +1,37 @@
+{
+    "name":"Contact Form Module For ContentBox",
+    "shortDescription":"Contact Form Module For ContentBox",
+    "location":"https://github.com/LucidSolutions/cbContactForm/archive/master.zip",
+    "version":"1.0",
+    "slug":"cbContactForm",
+    "author":"Lucid Outsourcing Solutions",
+    "homepage":"https://github.com/LucidSolutions/cbContactForm",
+    "documentation":"https://github.com/LucidSolutions/cbContactForm",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/LucidSolutions/cbContactForm"
+    },
+    "bugs":"https://github.com/LucidSolutions/cbContactForm/issues",
+    "type":"contentbox-modules",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "contributors":[
+        
+    ],
+    "dependencies":{
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+    },
+    "ignore":[
+        "**/.*",
+        "tests",
+        "screenshots"
+    ]
+}
