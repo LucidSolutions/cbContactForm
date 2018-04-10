@@ -3,7 +3,7 @@ Contact Form Module For ContentBox
 
 ## **Introduction**
 
-**cbContactForm** for is essential for every site, this plugin lets you create one without effort.
+**cbContactForm** is essential for every site.
 
 ## **Quick Start**
 
@@ -13,7 +13,7 @@ Clone the git repo - `git clone git@github.com:LucidSolutions/cbContactForm.git`
 
 Clone this repo into \modules\contentbox\modules of your contentbox code.
 
-## **Usuage**
+## **Usage**
 
 use viewlet widget which is come along with default content installation.
 
