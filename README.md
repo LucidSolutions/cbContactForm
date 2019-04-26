@@ -23,7 +23,7 @@ Or you can copy the ContactForm.cfc which is in widget folder in this repo into 
 
 ## **Contributors**
 
-cbContactForm is authored by **[Lucid Outsourcing Solutions](https://lucidsolutions.in/)** and everyone is welcome to contribute. 
+cbContactForm is authored by **[Lucid Outsourcing Solutions](https://lucidoutsourcing.com)** and everyone is welcome to contribute. 
 
 ## **Problems**
 
