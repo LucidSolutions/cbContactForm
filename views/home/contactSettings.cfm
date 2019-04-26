@@ -78,10 +78,41 @@
                 </div>
             </div>
             <div class="row">            
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="form-group">
                         <label for="subjectLabel">Subject Label</label>
                         <input id="subjectLabel" type="text" name="subjectLabel" class="form-control" placeholder="Subject Label" value="#event.getValue('subjectLabel')#">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="subscribeText">Subscribe Text</label>
+                        <input id="subscribeText" type="text" name="subscribeText" class="form-control" placeholder="Subscribe Text" value="#event.getValue('subscribeText')#">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="emailList">Email List</label>
+                        <small>To specify multiple email, separate the email with comma (,).</small>
+                        <textarea id="emailList" name="emailList" class="form-control" placeholder="Subject List" rows="4" required="required">#event.getValue('emailList')#</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="emailSubject">Email Subject</label>
+                        <input id="emailSubject" name="emailSubject" class="form-control" placeholder="Subject List" required="required" value="#event.getValue('emailSubject')#"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="successMessage">Success Message</label>
+                        <input id="successMessage" type="text" name="successMessage" class="form-control" placeholder="Success Message" value="#event.getValue('successMessage')#">
                     </div>
                 </div>
             </div>
