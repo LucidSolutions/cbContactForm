@@ -3,9 +3,9 @@ component {
 	// Module Properties
 	this.title 				= "Contact Form";
 	this.author 			= "Lucid Outsourcing Solutions";
-	this.webURL 			= "https://lucidsolutions.in/";
+	this.webURL 			= "https://lucidoutsourcing.com/";
 	this.description 		= "This is an awesome Contact Form module";
-	this.version			= "1.0";
+	this.version			= "2.0";
 	// If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
 	this.viewParentLookup 	= true;
 	// If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
@@ -33,7 +33,11 @@ component {
 			submitLabel='Send',
 			formHeading='Contact Us',
 			subjectLabel='Subject',
-			subjectList='General Information|Request for Support|Other'
+			subjectList='General Information|Request for Support|Other',
+			subscribeText='',
+			emailList='',
+			emailSubject='',
+			successMessage='Request submitted !!'
 		};
 
 		// SES Routes
@@ -56,7 +60,7 @@ component {
 	*/
 	function onLoad(){
 		// Let's add ourselves to the main menu in the Modules section
-		var menuService = controller.getWireBox().getInstance( "AdminMenuService@cb" );
+		var menuService = controller.getWireBox().getInstance( "AdminMenuService@contentbox" );
 		// Add Menu Contribution
 		menuService.addSubMenu(topMenu=menuService.MODULES,name="cbContactForm",label="Contact Form",href="#menuService.buildModuleLink('cbContactForm','home')#" );
 	}
@@ -65,7 +69,7 @@ component {
 	* Fired when the module is activated by ContentBox
 	*/
 	function onActivate(){
-		var settingService = controller.getWireBox().getInstance("SettingService@cb");
+		var settingService = controller.getWireBox().getInstance("SettingService@contentbox");
 		// store default settings
 		var findArgs = {name="cb_cbContactForm"};
 		var setting = settingService.findWhere(criteria=findArgs);
@@ -82,7 +86,7 @@ component {
 	*/
 	function onUnload(){
 		// Let's remove ourselves to the main menu in the Modules section
-		var menuService = controller.getWireBox().getInstance( "AdminMenuService@cb" );
+		var menuService = controller.getWireBox().getInstance( "AdminMenuService@contentbox" );
 		// Remove Menu Contribution
 		menuService.removeSubMenu(topMenu=menuService.MODULES,name="cbContactForm" );
 	}
@@ -91,7 +95,7 @@ component {
 	* Fired when the module is deactivated by ContentBox
 	*/
 	function onDeactivate(){
-		var settingService = controller.getWireBox().getInstance("SettingService@cb");
+		var settingService = controller.getWireBox().getInstance("SettingService@contentbox");
 		var args = {name="cb_cbContactForm"};
 		var setting = settingService.findWhere(criteria=args);
 		if( !isNull(setting) ){

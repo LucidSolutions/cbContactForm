@@ -6,7 +6,7 @@
 </div>
 <div class="row">
     <div class="col-md-9">
-        #getModel( "messagebox@cbMessagebox" ).renderit()#
+        #getInstance( "messagebox@cbMessagebox" ).renderit()#
         <form id="contactform" method="post" action="#prc.xehContactRemove#" role="form">
             <input type="hidden" name="targetContactID" id="targetContactID" value="" />
             <div class="panel panel-default">

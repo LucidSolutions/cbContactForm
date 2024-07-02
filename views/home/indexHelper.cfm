@@ -1,6 +1,6 @@
 ﻿<cfoutput>
 <script>
-$( document ).ready( function(){
+document.addEventListener("DOMContentLoaded", function (event) {
 	// Setup view
 	setupView( { 
 		tableContainer	: $( "##contactTableContainer" ), 

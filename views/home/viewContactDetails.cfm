@@ -45,16 +45,6 @@
 						<th>Message</th>
 						<th>#prc.contactDetails.getcontactMessage()# </th>
 					</tr>
-					<tr>
-						<th>Subscribe </th>
-						<th>
-							<cfif prc.contactDetails.getIsSubscribe()>
-								<i class="fa fa-check-circle" title="Yes" style="color:green;"></i>
-							<cfelse>
-								<i class="fa fa-times-circle" title="No" style="color:red;"></i>
-							</cfif>
-						</th>
-					</tr>
 				</tbody>
 			</table>
 	    </div>

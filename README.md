@@ -11,7 +11,11 @@ Clone the git repo - `git clone git@github.com:LucidSolutions/cbContactForm.git`
 
 ## **Installation**
 
-Clone this repo into \modules\contentbox\modules of your contentbox code.
+Clone this repo into modules_app/contentbox-custom/_modules of your contentbox code.
+
+or 
+
+box install cbContactForm modules_app/contentbox-custom/_modules
 
 ## **Usage**
 
@@ -23,7 +27,7 @@ Or you can copy the ContactForm.cfc which is in widget folder in this repo into 
 
 ## **Contributors**
 
-cbContactForm is authored by **[Lucid Outsourcing Solutions](https://lucidoutsourcing.com)** and everyone is welcome to contribute. 
+cbContactForm is authored by **[Lucid Outsourcing Solutions](https://lucidoutsourcing.com/)** and everyone is welcome to contribute. 
 
 ## **Problems**
 

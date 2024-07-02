@@ -7,7 +7,7 @@
 			<th>Subject</th>
 			<th>Phone Number</th>
 			<th>Created Date</th>
-			<th>Subscribe</th>
+			<!--- <th>Subscribe</th> --->
 			<th class="{sorter:false} ">Action</th>
 		</tr>
 	</thead>
@@ -44,14 +44,14 @@
 				
 				#DateTimeFormat(#cont.getcreatedDate()#, 'medium')# 
 			</td>
-			<td style="text-align:center;">
+			<!--- <td style="text-align:center;">
 				<p style="display:none;">#cont.getIsSubscribe()#</p>
 				<cfif cont.getIsSubscribe()>
 					<i class="fa fa-check-circle" title="Yes" style="color:green;"></i>
 				<cfelse>
 					<i class="fa fa-times-circle" title="No" style="color:red;"></i>
 				</cfif>
-			</td>
+			</td> --->
 			<td class="btn-group btn-group-sm">
 				<a title="View Contact" href="#prc.xehContactView#/contactID/#cont.getContactID()#" class="btn btn-sm btn-info" data-title="<i class='fa fa-eye'></i> View Contact">
 					<i id="view_#cont.getContactID()#" class="fa fa-eye fa-lg"></i> 

@@ -5,7 +5,7 @@
         #getInstance("messageBox@cbMessageBox").renderit()#
     </div>
 </div>
-<form id="contact-form" method="post" action="#event.buildLink(linkTo='#prc.xehformsubmit#')#" role="form">
+<form id="contact-form" method="post" action="#event.buildLink('#prc.xehformsubmit#')#" role="form">
     <input type="hidden" name="_returnTo" value="#cb.linkSelf()#">
     <div class="controls">
         <div class="row">

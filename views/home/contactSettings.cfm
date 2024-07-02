@@ -1,7 +1,7 @@
 ﻿<cfoutput>
 <form id="contact-form" method="post" action="#prc.xehContactSetting#" role="form">
     <input type="hidden" name="_returnTo" value="#cb.linkSelf()#">
-    #getModel( "messagebox@cbMessagebox" ).renderit()#
+    #getInstance( "messagebox@cbMessagebox" ).renderit()#
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3><i class="fa fa-address-book-o fa-lg"></i> Contact Form Settings</h3>

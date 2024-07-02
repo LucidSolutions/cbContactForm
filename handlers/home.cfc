@@ -1,8 +1,8 @@
 component {
 	property name="ContactService"		inject="id:ContactService@cbContactForm";
-	property name="paging"					inject="id:paging@cb";
-	property name="settingService"		inject="id:settingService@cb";
-   	property name="CBHelper"			inject="id:CBHelper@cb";
+	property name="paging"					inject="id:paging@contentbox";
+	property name="settingService"		inject="id:settingService@contentbox";
+   	property name="CBHelper"			inject="id:CBHelper@contentbox";
    	property name="cbMessagebox" 	inject="messagebox@cbmessagebox";
 
 	function index(event,rc,prc){
@@ -117,12 +117,13 @@ component {
 				cForm.setIsSubscribe(true);
 			}
 			var formSuccess = ContactService.save(cForm);
-			if(formSuccess){
-				sendMail(event,cForm);				
+			if(!formSuccess.getIsDeleted() && structKeyExists(settings, 'emailList') && len(settings.emailList) > 0){
+				sendMail(event, cForm);				
 			}
 			cbMessageBox.info(contactFormData.successMessage);
 		}
-		setNextEvent(url=rc._returnTo&'?cbCache=true');
+		relocate(URL= rc._returnTo&'?cbCache=true');
+		// setNextEvent(url=rc._returnTo&'?cbCache=true');
 	}
 
 	function contactValid(formData){
@@ -185,10 +186,6 @@ component {
 									<tr>
 										<td><strong>Message:</strong></td>
 										<td>#cForm.getcontactMessage()# </td>
-									</tr>
-									<tr>
-										<td><strong>Subscribe:</strong> </td>
-										<td>#cForm.getIsSubscribe()#</td>
 									</tr>
 					            </tbody>
 					        </table>

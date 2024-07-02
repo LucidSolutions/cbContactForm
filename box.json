@@ -19,16 +19,10 @@
             "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
         }
     ],
-    "contributors":[
-        
-    ],
-    "dependencies":{
-    },
-    "devDependencies":{
-        
-    },
-    "installPaths":{
-    },
+    "contributors":[],
+    "dependencies":{},
+    "devDependencies":{},
+    "installPaths":{},
     "ignore":[
         "**/.*",
         "tests",
