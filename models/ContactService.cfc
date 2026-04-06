@@ -1,9 +1,9 @@
-component extends="modules.contentbox.modules.contentbox-deps.modules.cborm.models.VirtualEntityService" singleton{
+component extends  ="cborm.models.VirtualEntityService"	accessors="true" singleton{
 
 
 	public ContactService function init(){
 		// init super class
-		super.init(entityName="ContactForm");
+		super.init(entityName="cbContactForm");
 		return this;
 	}
 
@@ -51,7 +51,6 @@ component extends="modules.contentbox.modules.contentbox-deps.modules.cborm.mode
 
 	function subjectList(){
 		var c = newCriteria();				
-		var filterSubList = c.withProjections( distinct="contactSubject" ).list();
-		return filterSubList;
+		return c.withProjections( property = "contactSubject" ).list();
 	}
 }	

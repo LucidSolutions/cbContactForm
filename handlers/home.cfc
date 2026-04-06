@@ -52,7 +52,7 @@ component {
 				prc.csettings[key]=pairs[key];
 			}
 		}
-		return renderview(view="home/render", module="cbContactForm");
+		return view(view="home/render", module="cbContactForm");
 	}
 
 	function indexTable( event, rc, prc ){
@@ -123,7 +123,6 @@ component {
 			cbMessageBox.info(contactFormData.successMessage);
 		}
 		relocate(URL= rc._returnTo&'?cbCache=true');
-		// setNextEvent(url=rc._returnTo&'?cbCache=true');
 	}
 
 	function contactValid(formData){

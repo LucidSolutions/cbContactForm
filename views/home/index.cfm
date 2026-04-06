@@ -107,9 +107,9 @@
             </h3>
         </div>
         <div class="panel-body">
-            <p><a href="https://lucidsolutions.in" target="_blank" title="Lucid Outsourcing Solutions Pvt Ltd">
+            <p><a href="https://lucidoutsourcing.com" target="_blank" title="Lucid Outsourcing Solutions Pvt Ltd">
                 <div class="center">
-                    <img src="https://lucidsolutions.in/images/banner.png" alt="Lucid Outsourcing Solutions Pvt Ltd" border="0" />
+                    <img src="https://lucidoutsourcing.com/logo.webp" alt="Lucid Outsourcing Solutions Pvt Ltd" border="0" />
                 </div>
             </a></p>
 
